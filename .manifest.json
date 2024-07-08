@@ -1,0 +1,151 @@
+{
+  "liblabVersion": "2.1.18",
+  "date": "2024-07-08T18:00:00.090Z",
+  "config": {
+    "specUrl": "./api-specs/tmp/nyt-article-search-api.yaml",
+    "deliveryMethods": ["zip"],
+    "languages": ["typescript"],
+    "sdkName": "NYT Article Search",
+    "sdkVersion": "1.0.0",
+    "baseUrl": "https://api.nytimes.com/svc/search/v2",
+    "includeOptionalSnippetParameters": false,
+    "authentication": {},
+    "auth": [],
+    "hooks": {
+      "enabled": true,
+      "sourceDir": "/tmp/resources/hooks"
+    },
+    "license": {
+      "type": "MIT",
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT",
+      "path": "MIT.ejs"
+    },
+    "languageOptions": {
+      "typescript": {
+        "compilerOptions": {},
+        "bundle": true,
+        "npmName": "nyt-article-search",
+        "additionalConstructorParameters": [
+          {
+            "name": "apiKey"
+          }
+        ]
+      }
+    },
+    "publishing": {
+      "githubOrg": "liblaber"
+    },
+    "environmentVariables": [],
+    "retry": {
+      "enabled": true,
+      "maxAttempts": 3,
+      "retryDelay": 150,
+      "maxDelay": 5000,
+      "retryDelayJitter": 50,
+      "backOffFactor": 2,
+      "httpCodesToRetry": [408, 429, 500, 502, 503, 504],
+      "httpMethodsToRetry": ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"]
+    },
+    "generateEnv": false,
+    "multiTenant": false,
+    "includeWatermark": false,
+    "inferServiceNames": false,
+    "usesFormData": false,
+    "privateRepo": false,
+    "reservedKeywords": [],
+    "githubRef": "",
+    "fileOutput": "/tmp",
+    "tempDir": "output",
+    "hooksLocation": {
+      "bucketKey": "hooks.zip",
+      "bucketName": "hooks-bucket"
+    },
+    "language": "typescript",
+    "deliveryMethod": "zip",
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "lib": ["es2017", "dom"]
+    },
+    "bundle": true,
+    "npmName": "nyt-article-search",
+    "additionalConstructorParameters": [
+      {
+        "name": "apiKey"
+      }
+    ],
+    "typescriptVersion": "5.3.3",
+    "zodVersion": "3.22.0",
+    "httpLibrary": {
+      "name": "axios",
+      "packages": {
+        "axios": "^1.6.8"
+      },
+      "languages": ["typescript"]
+    },
+    "customQueries": {
+      "paths": [],
+      "rawQueries": [],
+      "queriesData": []
+    },
+    "devContainer": false
+  },
+  "files": [
+    "package.json",
+    "tsconfig.json",
+    "examples/tsconfig.json",
+    "examples/package.json",
+    "examples/README.md",
+    "examples/src/index.ts",
+    "src/http/client.ts",
+    "src/http/serializer.ts",
+    "src/services/search/models/get-articlesearch-json-ok-response.ts",
+    "src/services/search/models/facet.ts",
+    "src/services/search/models/facet-fields.ts",
+    "src/services/search/models/facet-filter.ts",
+    "src/services/search/models/sort.ts",
+    "src/services/search/models/response.ts",
+    "src/services/search/models/article.ts",
+    "src/services/search/models/meta.ts",
+    "src/services/search/models/multimedia.ts",
+    "src/services/search/models/headline.ts",
+    "src/services/search/models/keyword.ts",
+    "src/services/search/models/byline.ts",
+    "src/services/search/models/legacy.ts",
+    "src/services/search/models/person.ts",
+    ".gitignore",
+    "src/services/base-service.ts",
+    "src/services/search/search.ts",
+    "src/index.ts",
+    "src/http/index.ts",
+    "src/services/search/models/index.ts",
+    "src/services/search/index.ts",
+    "src/http/handlers/handler-chain.ts",
+    "src/http/types.ts",
+    "src/http/error.ts",
+    "src/http/handlers/terminating-handler.ts",
+    "src/http/handlers/hook-handler.ts",
+    "src/http/hooks/custom-hook.ts",
+    "src/http/hooks/hook.ts",
+    "src/http/handlers/retry-handler.ts",
+    "src/http/environment.ts",
+    "src/http/handlers/response-validation-handler.ts",
+    "./LICENSE",
+    "src/services/search/request-params.ts",
+    "documentation/models/Facet.md",
+    "documentation/models/FacetFields.md",
+    "documentation/models/FacetFilter.md",
+    "documentation/models/Sort.md",
+    "documentation/models/Article.md",
+    "documentation/models/Headline.md",
+    "documentation/models/Keyword.md",
+    "documentation/models/Byline.md",
+    "documentation/models/Person.md",
+    "src/http/handlers/request-validation-handler.ts",
+    "documentation/models/Multimedia.md",
+    "documentation/services/SearchService.md",
+    "documentation/models/GetArticlesearchJsonOkResponse.md",
+    "README.md"
+  ]
+}
