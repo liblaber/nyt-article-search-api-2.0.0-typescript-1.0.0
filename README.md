@@ -1,6 +1,6 @@
-# NytArticleSearch TypeScript SDK 1.0.0
+# NY Times Article Search TypeScript SDK 1.0.0
 
-Welcome to the NytArticleSearch SDK documentation. This guide will help you get started with integrating and using the NytArticleSearch SDK in your project.
+Welcome to the NYTimes Article Search SDK documentation. This guide will help you get started with integrating and using the NYTimes Article Search SDK in your project.
 
 ## Versions
 
@@ -13,12 +13,16 @@ Use the Article Search API to look up articles by keyword. You can refine your s
 
 ## Table of Contents
 
-- [Setup & Configuration](#setup--configuration)
+- [NY Times Article Search TypeScript SDK 1.0.0](#ny-times-article-search-typescript-sdk-100)
+  - [Versions](#versions)
+  - [About the API](#about-the-api)
+  - [Table of Contents](#table-of-contents)
+- [Setup \& Configuration](#setup--configuration)
   - [Supported Language Versions](#supported-language-versions)
   - [Installation](#installation)
-- [Services](#services)
-- [Models](#models)
-- [License](#license)
+  - [Services](#services)
+  - [Models](#models)
+  - [License](#license)
 
 # Setup & Configuration
 
